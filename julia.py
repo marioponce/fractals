@@ -9,8 +9,6 @@ Created on Thu Apr 30 15:02:07 2020
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-
 class julia:
     def __init__(self, pars):
         try:
@@ -72,7 +70,6 @@ class julia:
     def pow5(self, m):
         m = np.array(m)
         return list(pow(m,5))
-        
 
     def do_iter(self):
         i = 0
@@ -84,7 +81,6 @@ class julia:
             i += 1
             self.i[abs(self.z)<2] = i
             
-    
     def do_plot(self):
         fig1, (ax) = plt.subplots(1, 1)
         #ax = plt.pcolor(abs(self.i))
